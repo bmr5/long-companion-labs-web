@@ -1,0 +1,61 @@
+import { GeistSans } from "geist/font/sans";
+import { Playfair_Display } from "next/font/google";
+import { ReactNode } from "react";
+import { Toaster } from "sonner";
+import "./globals.css";
+import { baseUrl } from "lib/utils";
+import { AuthProvider } from "lib/auth/context";
+import { WooCartProvider } from "lib/woocommerce/cart-context";
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-playfair",
+});
+
+const { SITE_NAME } = process.env;
+
+export const metadata = {
+  metadataBase: new URL(baseUrl),
+  title: {
+    default: SITE_NAME!,
+    template: `%s | ${SITE_NAME}`,
+  },
+  description:
+    "Premium research peptides for scientific study. High purity compounds with certificates of analysis.",
+  openGraph: {
+    title: SITE_NAME!,
+    description:
+      "Premium research peptides for scientific study. High purity compounds with certificates of analysis.",
+    siteName: SITE_NAME!,
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: SITE_NAME!,
+    description:
+      "Premium research peptides for scientific study. High purity compounds with certificates of analysis.",
+  },
+  robots: {
+    follow: true,
+    index: true,
+  },
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: ReactNode;
+}) {
+  return (
+    <html lang="en" className={`${GeistSans.variable} ${playfair.variable}`}>
+      <body className="bg-stone-50 text-stone-900 selection:bg-[#9CAF88]/30">
+        <AuthProvider>
+          <WooCartProvider>
+            {children}
+            <Toaster closeButton />
+          </WooCartProvider>
+        </AuthProvider>
+      </body>
+    </html>
+  );
+}

@@ -7,9 +7,9 @@ import { Stats } from "components/landing/stats";
 import { Testimonial } from "components/landing/testimonial";
 
 export const metadata = {
-  title: "Genesis Peptides | Premium Research Peptides",
+  title: "Puptides | BPC-157 Dog Treats for Health & Recovery",
   description:
-    "High-purity research peptides for scientific study. Every compound verified through rigorous HPLC testing with certificates of analysis.",
+    "Science-backed BPC-157 dog treats for joint health, mobility, and recovery. Premium peptide supplements designed for your dog's wellness and vitality.",
 };
 
 export default function LandingPage() {

@@ -1,23 +1,23 @@
-import { Droplets, FlaskConical, FileCheck } from "lucide-react";
+import { HeartPulse, Shield, Zap } from "lucide-react";
 
 const features = [
   {
-    name: "99%+ Purity",
+    name: "Joint & Mobility Support",
     description:
-      "Every compound synthesized to 99%+ purity and verified through rigorous HPLC testing. Quality you can trust for accurate research results.",
-    icon: Droplets,
+      "BPC-157 helps promote healthy joint function and mobility, supporting your dog's active lifestyle and natural movement.",
+    icon: HeartPulse,
   },
   {
-    name: "Third-Party Verified",
+    name: "Gut Health",
     description:
-      "Independent laboratory testing confirms purity and identity. Certificates of analysis available for every batch.",
-    icon: FlaskConical,
+      "Supports digestive wellness and immune function through scientifically-backed BPC-157 formulation designed for canine health.",
+    icon: Shield,
   },
   {
-    name: "Research Grade",
+    name: "Senior Dog Vitality",
     description:
-      "Manufactured under strict quality control for in vitro research and laboratory experimentation. Not for human consumption.",
-    icon: FileCheck,
+      "Specially formulated to support cognitive function, energy levels, and overall vitality in aging dogs 7+ years old.",
+    icon: Zap,
   },
 ];
 
@@ -27,11 +27,11 @@ export function Features() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-serif text-4xl tracking-tight text-stone-900 sm:text-5xl">
-            The Genesis Difference
+            Why Choose Puptides
           </h2>
           <p className="mt-6 text-lg text-stone-600">
-            Premium research peptides trusted by laboratories and researchers
-            worldwide.
+            Science-backed BPC-157 treats designed specifically for your dog's 
+            health and wellbeing.
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-5xl sm:mt-20">

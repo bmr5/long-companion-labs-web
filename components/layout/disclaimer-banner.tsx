@@ -9,12 +9,9 @@ export function DisclaimerBanner() {
             <AlertTriangle className="h-6 w-6 text-amber-600" />
           </div>
           <p className="text-sm text-stone-600 leading-relaxed">
-            This designation allows the use of research chemicals strictly for in
-            vitro testing and laboratory experimentation only. All product
-            information available on this website is for educational purposes only.
-            Bodily introduction of any kind into humans or animals is strictly
-            forbidden by law. This product should only be handled by licensed,
-            qualified professionals.
+            These statements have not been evaluated by the FDA. This product is 
+            not intended to diagnose, treat, cure, or prevent any disease. Consult 
+            your veterinarian before use.
           </p>
         </div>
       </div>

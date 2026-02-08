@@ -2,22 +2,7 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
 export function middleware(request: NextRequest) {
-  const { pathname } = request.nextUrl;
-
-  // Only protect /products routes
-  if (!pathname.startsWith("/products")) {
-    return NextResponse.next();
-  }
-
-  // Cookie-presence check only (no JWT validation to avoid latency)
-  const token = request.cookies.get("auth_token")?.value;
-
-  if (!token) {
-    const loginUrl = new URL("/login", request.url);
-    loginUrl.searchParams.set("from", pathname);
-    return NextResponse.redirect(loginUrl);
-  }
-
+  // No auth gate - all pages are public for Puptides
   return NextResponse.next();
 }
 

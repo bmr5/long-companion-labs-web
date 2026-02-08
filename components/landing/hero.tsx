@@ -19,9 +19,9 @@ export function Hero() {
             className="flex h-16 items-center justify-between"
           >
             <Link href="/" className="-m-1.5 p-1.5">
-              <span className="sr-only">Genesis Peptides</span>
+              <span className="sr-only">Puptides</span>
               <span className="font-serif text-2xl text-stone-900">
-                Genesis
+                Puptides
               </span>
             </Link>
 
@@ -65,16 +65,16 @@ export function Hero() {
             <div className="px-6 py-20 lg:px-8 lg:py-32">
               <div className="mx-auto max-w-xl lg:mx-0">
                 <h1 className="font-serif text-5xl tracking-tight text-stone-900 sm:text-6xl lg:text-7xl">
-                  Premium
+                  The Recovery
                   <br />
-                  Research
+                  Peptide Your
                   <br />
-                  Peptides
+                  Dog Deserves
                 </h1>
                 <p className="mt-8 text-lg text-stone-600">
-                  High-purity peptides for in vitro research and laboratory
-                  experimentation. Every compound verified through rigorous HPLC
-                  testing with certificates of analysis.
+                  Science-backed BPC-157 chews formulated specifically for dogs. 
+                  Support your pet's joint health, tissue recovery, and overall 
+                  vitality with our premium, vet-reviewed treats.
                 </p>
                 <div className="mt-10 flex flex-wrap items-center gap-4">
                   <Link
@@ -87,7 +87,7 @@ export function Hero() {
                     href="/products"
                     className="rounded-full bg-[#C4A484] px-6 py-3 text-sm font-medium uppercase tracking-wider text-white transition-colors hover:bg-[#B8997A]"
                   >
-                    Shop Now
+                    Shop Treats
                   </Link>
                 </div>
               </div>
@@ -96,7 +96,7 @@ export function Hero() {
             {/* Right image */}
             <div className="relative h-[50vh] lg:h-full">
               <Image
-                alt="Premium peptide vials on travertine surface with soft morning light"
+                alt="Premium BPC-157 dog treats on natural surface with soft lighting"
                 src="/hero.png"
                 fill
                 priority

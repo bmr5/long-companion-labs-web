@@ -50,7 +50,7 @@ export function Footer() {
                 Newsletter
               </h3>
               <p className="mt-4 text-sm text-stone-300">
-                Subscribe for research updates and product announcements.
+                Subscribe for dog health tips and product updates.
               </p>
               <form className="mt-4">
                 <div className="flex flex-col gap-2">
@@ -91,10 +91,10 @@ export function Footer() {
               <address className="mt-4 space-y-3 text-sm not-italic text-stone-300">
                 <p>
                   <a
-                    href="mailto:support@genesispeptides.com"
+                    href="mailto:support@puptides.com"
                     className="transition-colors hover:text-white"
                   >
-                    support@genesispeptides.com
+                    support@puptides.com
                   </a>
                 </p>
                 <p>
@@ -118,10 +118,10 @@ export function Footer() {
           <div className="mt-12 border-t border-stone-700 pt-8">
             <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
               <Link href="/" className="font-serif text-2xl text-white">
-                Genesis
+                Puptides
               </Link>
               <p className="text-sm text-stone-400">
-                &copy; {new Date().getFullYear()} Genesis Peptides. All rights
+                &copy; {new Date().getFullYear()} Puptides. All rights
                 reserved.
               </p>
             </div>

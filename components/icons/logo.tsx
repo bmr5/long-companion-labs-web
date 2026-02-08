@@ -17,7 +17,7 @@ export default function LogoIcon(props: React.ComponentProps<"svg">) {
         fontWeight="400"
         letterSpacing="-0.5"
       >
-        GP
+        🐾
       </text>
     </svg>
   );

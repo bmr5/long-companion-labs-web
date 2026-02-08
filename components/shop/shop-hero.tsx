@@ -25,11 +25,11 @@ export function ShopHero({ searchQuery }: ShopHeroProps) {
     <section className="py-12 md:py-16">
       <div className="mx-auto max-w-3xl px-4 text-center">
         <h1 className="font-serif text-4xl italic tracking-tight text-stone-900 md:text-5xl">
-          the collection
+          the treats
         </h1>
         <p className="mx-auto mt-4 max-w-2xl text-base text-stone-600 md:text-lg">
-          research-grade peptides and compounds, rigorously tested for purity
-          and potency—because your research deserves nothing less.
+          science-backed BPC-157 treats crafted for your dog's health and vitality—
+          because your best friend deserves the best.
         </p>
 
         <form onSubmit={handleSearch} className="mx-auto mt-8 max-w-md">

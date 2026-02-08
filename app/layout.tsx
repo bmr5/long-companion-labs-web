@@ -21,11 +21,11 @@ export const metadata = {
     template: `%s | ${SITE_NAME}`,
   },
   description:
-    "Premium research peptides for scientific study. High purity compounds with certificates of analysis.",
+    "Science-backed BPC-157 dog treats for joint health, mobility, and recovery. Premium peptide supplements designed for your dog's wellness.",
   openGraph: {
     title: SITE_NAME!,
     description:
-      "Premium research peptides for scientific study. High purity compounds with certificates of analysis.",
+      "Science-backed BPC-157 dog treats for joint health, mobility, and recovery. Premium peptide supplements designed for your dog's wellness.",
     siteName: SITE_NAME!,
     type: "website",
   },
@@ -33,7 +33,7 @@ export const metadata = {
     card: "summary_large_image",
     title: SITE_NAME!,
     description:
-      "Premium research peptides for scientific study. High purity compounds with certificates of analysis.",
+      "Science-backed BPC-157 dog treats for joint health, mobility, and recovery. Premium peptide supplements designed for your dog's wellness.",
   },
   robots: {
     follow: true,

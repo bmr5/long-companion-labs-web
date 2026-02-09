@@ -17,10 +17,6 @@ const images = [
     alt: "Senior golden retriever taking a Puptides treat from owner's hand",
   },
   {
-    src: "/products/carousel-4-flatlay.png",
-    alt: "Puptides treats styled flat lay with product bag and accessories",
-  },
-  {
     src: "/products/carousel-5-infographic.png",
     alt: "5 Ways BPC-157 Supports Your Senior Dog - benefits infographic",
   },
@@ -47,7 +43,7 @@ export function ProductGallery() {
       </div>
 
       {/* Thumbnails */}
-      <div className="grid grid-cols-5 gap-2">
+      <div className="grid grid-cols-4 gap-2">
         {images.map((img, i) => (
           <button
             key={img.src}

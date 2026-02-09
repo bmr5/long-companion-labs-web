@@ -4,6 +4,7 @@ import { ReactNode } from "react";
 import { Toaster } from "sonner";
 import "./globals.css";
 import { baseUrl } from "lib/utils";
+import { MetaPixel } from "components/meta-pixel";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -47,6 +48,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${GeistSans.variable} ${playfair.variable}`}>
       <body className="bg-stone-50 text-stone-900 selection:bg-[#9CAF88]/30">
+        <MetaPixel />
         {children}
         <Toaster closeButton />
       </body>

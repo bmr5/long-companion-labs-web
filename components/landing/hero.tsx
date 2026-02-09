@@ -3,7 +3,7 @@ import Link from "next/link";
 import { MobileNav } from "./mobile-nav";
 
 const navigation = [
-  { name: "SHOP", href: "/products" },
+  { name: "TREATS", href: "/products" },
   { name: "RESEARCH", href: "#benefits" },
   { name: "QUALITY", href: "#about" },
   { name: "FAQ", href: "#faq" },
@@ -42,16 +42,10 @@ export function Hero() {
             </div>
             <div className="hidden lg:ml-auto lg:flex lg:items-center lg:gap-x-6">
               <Link
-                href="/login"
-                className="text-xs font-medium uppercase tracking-wider text-stone-600 transition-colors hover:text-stone-900"
+                href="/products"
+                className="rounded-full bg-[#C4A484] px-5 py-2 text-xs font-medium uppercase tracking-wider text-white transition-colors hover:bg-[#B8997A]"
               >
-                Member Login
-              </Link>
-              <Link
-                href="/login?tab=register"
-                className="rounded-full border border-stone-300 px-5 py-2 text-xs font-medium uppercase tracking-wider text-stone-900 transition-colors hover:bg-stone-100"
-              >
-                Join
+                Shop Treats
               </Link>
             </div>
           </nav>
@@ -94,13 +88,13 @@ export function Hero() {
             </div>
 
             {/* Right image */}
-            <div className="relative h-[50vh] lg:h-full">
+            <div className="relative flex h-[50vh] items-end lg:h-full">
               <Image
-                alt="Premium BPC-157 dog treats on natural surface with soft lighting"
+                alt="Golden retriever running through sunlit grass"
                 src="/hero.png"
                 fill
                 priority
-                className="object-cover"
+                className="object-cover object-[center_30%]"
                 sizes="(min-width: 1024px) 50vw, 100vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-stone-50/20 to-transparent lg:bg-gradient-to-r lg:from-stone-50/40" />

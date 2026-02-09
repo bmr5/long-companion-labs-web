@@ -2,11 +2,8 @@ import Link from "next/link";
 import { DisclaimerBanner } from "components/layout/disclaimer-banner";
 
 const helpLinks = [
-  { name: "Affiliate Login", href: "/affiliate-login" },
-  { name: "Affiliate Area", href: "/affiliate-area" },
-  { name: "Sitemap", href: "/sitemap" },
-  { name: "My Account", href: "/account" },
-  { name: "Support", href: "/support" },
+  { name: "Treats", href: "/products" },
+  { name: "FAQ", href: "/#faq" },
   { name: "Privacy Policy", href: "/privacy" },
   { name: "Terms and Conditions", href: "/terms" },
 ];
@@ -88,7 +85,7 @@ export function Footer() {
               <h3 className="text-sm font-semibold uppercase tracking-wider text-white">
                 Contact
               </h3>
-              <address className="mt-4 space-y-3 text-sm not-italic text-stone-300">
+              <div className="mt-4 space-y-3 text-sm text-stone-300">
                 <p>
                   <a
                     href="mailto:support@puptides.com"
@@ -97,20 +94,7 @@ export function Footer() {
                     support@puptides.com
                   </a>
                 </p>
-                <p>
-                  <a
-                    href="tel:+18058492550"
-                    className="transition-colors hover:text-white"
-                  >
-                    1 + (805) 849-2550
-                  </a>
-                </p>
-                <div className="pt-2 text-stone-400">
-                  <p className="font-medium text-stone-300">JASS LLC</p>
-                  <p>300 Corporate Pointe Dr, Suite 300</p>
-                  <p>Culver City, CA 90230</p>
-                </div>
-              </address>
+              </div>
             </div>
           </div>
 

@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
 import { ProductFooter } from "./product-footer";
 import { ProductPageClient } from "./product-page-client";
+import { ProductGallery } from "./product-gallery";
 import { MobileNav } from "components/landing/mobile-nav";
 
 const navigation = [
-  { name: "SHOP", href: "/products" },
+  { name: "TREATS", href: "/products" },
   { name: "RESEARCH", href: "/#benefits" },
   { name: "QUALITY", href: "/#about" },
   { name: "FAQ", href: "/#faq" },
@@ -45,14 +45,7 @@ export default function ProductsPage() {
                 </Link>
               ))}
             </div>
-            <div className="hidden lg:ml-auto lg:flex lg:items-center lg:gap-x-6">
-              <Link
-                href="/products"
-                className="rounded-full bg-[#C4A484] px-5 py-2 text-xs font-medium uppercase tracking-wider text-white transition-colors hover:bg-[#B8997A]"
-              >
-                Shop Now
-              </Link>
-            </div>
+            <div className="hidden lg:ml-auto lg:flex lg:items-center lg:gap-x-6" />
           </nav>
         </div>
       </header>
@@ -74,37 +67,8 @@ export default function ProductsPage() {
 
           {/* Product Grid */}
           <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
-            {/* Product Image */}
-            <div className="space-y-4">
-              <div className="relative aspect-square overflow-hidden rounded-2xl bg-stone-100">
-                <Image
-                  src="/hero.png"
-                  alt="Puptides BPC-157 Joint & Mobility Chews for Dogs"
-                  fill
-                  priority
-                  className="object-cover"
-                  sizes="(min-width: 1024px) 50vw, 100vw"
-                />
-                <div className="absolute top-4 left-4 rounded-full bg-[#C4A484] px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white">
-                  New
-                </div>
-              </div>
-              {/* Trust badges under image */}
-              <div className="grid grid-cols-3 gap-3">
-                <div className="flex flex-col items-center rounded-xl border border-stone-200 bg-white p-3 text-center">
-                  <span className="text-lg">🇺🇸</span>
-                  <span className="mt-1 text-xs font-medium text-stone-600">Made in USA</span>
-                </div>
-                <div className="flex flex-col items-center rounded-xl border border-stone-200 bg-white p-3 text-center">
-                  <span className="text-lg">🔬</span>
-                  <span className="mt-1 text-xs font-medium text-stone-600">Lab Tested</span>
-                </div>
-                <div className="flex flex-col items-center rounded-xl border border-stone-200 bg-white p-3 text-center">
-                  <span className="text-lg">👨‍⚕️</span>
-                  <span className="mt-1 text-xs font-medium text-stone-600">Vet Reviewed</span>
-                </div>
-              </div>
-            </div>
+            {/* Product Gallery */}
+            <ProductGallery />
 
             {/* Product Details */}
             <div className="flex flex-col gap-6">
@@ -232,7 +196,7 @@ export default function ProductsPage() {
                 </li>
               </ul>
               <p className="mt-4 text-xs text-stone-400">
-                No artificial colors, flavors, or preservatives. Grain-free. Soy-free.
+                No artificial colors, flavors, or preservatives. Grain-free. Soy-free. Seed oil-free.
               </p>
             </div>
 

@@ -13,7 +13,7 @@ import {
 import { Button } from "@/components/ui/button";
 
 const navigation = [
-  { name: "SHOP", href: "/products" },
+  { name: "TREATS", href: "/products" },
   { name: "WELLNESS", href: "#benefits" },
   { name: "SCIENCE", href: "#about" },
   { name: "FAQ", href: "#faq" },
@@ -41,7 +41,7 @@ export function MobileNav() {
         <SheetHeader>
           <SheetTitle className="text-left">
             <span className="font-serif text-2xl text-stone-900">
-              Genesis
+              Puptides
             </span>
           </SheetTitle>
         </SheetHeader>
@@ -59,20 +59,13 @@ export function MobileNav() {
                 </a>
               ))}
             </div>
-            <div className="space-y-2 py-6">
+            <div className="py-6">
               <Link
-                href="/login"
+                href="/products"
                 onClick={() => setOpen(false)}
-                className="-mx-3 block rounded-lg px-3 py-2.5 text-sm font-medium text-stone-600 hover:bg-stone-100 hover:text-stone-900"
+                className="-mx-3 block rounded-full bg-[#C4A484] px-3 py-2.5 text-center text-sm font-medium uppercase tracking-wider text-white hover:bg-[#B8997A]"
               >
-                Member Login
-              </Link>
-              <Link
-                href="/login?tab=register"
-                onClick={() => setOpen(false)}
-                className="-mx-3 block rounded-full border border-stone-300 px-3 py-2.5 text-center text-sm font-medium text-stone-900 hover:bg-stone-100"
-              >
-                Join
+                Shop Treats
               </Link>
             </div>
           </div>

@@ -39,7 +39,7 @@ export function ProductFooter() {
               <ul className="mt-4 space-y-3">
                 <li>
                   <Link href="/products" className="text-sm text-stone-300 transition-colors hover:text-white">
-                    Shop
+                    Treats
                   </Link>
                 </li>
                 <li>

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import posthog from "posthog-js";
 
 const sizes = [
   { label: "30 Chews", subtitle: "1 month supply", price: 49.99, original: 64.99 },
@@ -15,6 +16,7 @@ export function ProductPageClient() {
 
   const handleAddToCart = () => {
     const item = sizes[selected]!;
+    posthog.capture("add_to_cart", { size: item.label, price: item.price });
     sessionStorage.setItem(
       "puptides_cart",
       JSON.stringify({

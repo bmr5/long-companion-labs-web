@@ -5,6 +5,7 @@ import { Toaster } from "sonner";
 import "./globals.css";
 import { baseUrl } from "lib/utils";
 import { MetaPixel } from "components/meta-pixel";
+import { PostHogProvider } from "components/posthog-provider";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -49,8 +50,10 @@ export default function RootLayout({
     <html lang="en" className={`${GeistSans.variable} ${playfair.variable}`}>
       <body className="bg-stone-50 text-stone-900 selection:bg-[#9CAF88]/30">
         <MetaPixel />
-        {children}
-        <Toaster closeButton />
+        <PostHogProvider>
+          {children}
+          <Toaster closeButton />
+        </PostHogProvider>
       </body>
     </html>
   );

@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import posthog from "posthog-js";
 
 const US_STATES = [
   "", "AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA",
@@ -53,7 +54,11 @@ export default function CheckoutPage() {
     // Read cart from sessionStorage (set by product page)
     const stored = sessionStorage.getItem("puptides_cart");
     if (stored) {
-      setCart(JSON.parse(stored));
+      const item = JSON.parse(stored);
+      setCart(item);
+      posthog.capture("checkout_viewed", { size: item.size, price: item.price });
+    } else {
+      posthog.capture("checkout_viewed", { cart_empty: true });
     }
   }, []);
 
@@ -75,6 +80,7 @@ export default function CheckoutPage() {
     if (!validate()) return;
 
     setSubmitting(true);
+    posthog.capture("checkout_submitted", { size: cart?.size, price: cart?.price });
 
     // Log the checkout attempt to Google Sheets
     try {
@@ -117,6 +123,7 @@ export default function CheckoutPage() {
     } catch {
       // Fail silently
     }
+    posthog.capture("waitlist_submitted", { email: waitlistEmail, size: cart?.size });
     setSubmitting(false);
     setWaitlistSubmitted(true);
   };

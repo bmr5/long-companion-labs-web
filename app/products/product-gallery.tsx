@@ -9,16 +9,16 @@ const images = [
     alt: "Puptides BPC-157 Joint & Recovery pouch with golden retriever in kitchen",
   },
   {
+    src: "/products/carousel-4-owner-feeding.png",
+    alt: "Owner feeding a Puptides BPC-157 treat to golden retriever",
+  },
+  {
     src: "/products/carousel-2-multi-breed.png",
     alt: "Puptides BPC-157 pouch with German Shepherd, Labrador, and Cavalier King Charles",
   },
   {
     src: "/products/carousel-3-hero-treats.png",
     alt: "Puptides BPC-157 Joint & Recovery pouch with treats and trust badges",
-  },
-  {
-    src: "/products/carousel-4-owner-feeding.png",
-    alt: "Owner feeding a Puptides BPC-157 treat to golden retriever",
   },
 ];
 
@@ -38,7 +38,7 @@ export function ProductGallery() {
           sizes="(min-width: 1024px) 50vw, 100vw"
         />
         <div className="absolute top-4 left-4 rounded-full bg-[#C4A484] px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white">
-          New
+          Vet-Reviewed
         </div>
       </div>
 

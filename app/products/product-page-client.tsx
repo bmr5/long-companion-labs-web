@@ -5,9 +5,9 @@ import { useRouter } from "next/navigation";
 import posthog from "posthog-js";
 
 const sizes = [
-  { label: "30 Chews", subtitle: "1 month supply", price: 49.99, original: 64.99 },
-  { label: "60 Chews", subtitle: "2 month supply", price: 89.99, original: 129.98, badge: "Best Value" },
-  { label: "90 Chews", subtitle: "3 month supply", price: 124.99, original: 194.97, badge: "Most Popular" },
+  { label: "30 Chews", subtitle: "1 month supply", price: 49.99, original: 64.99, perDay: 1.67 },
+  { label: "60 Chews", subtitle: "2 month supply", price: 89.99, original: 129.98, perDay: 1.50, badge: "Best Value" },
+  { label: "90 Chews", subtitle: "3 month supply", price: 124.99, original: 194.97, perDay: 1.39, badge: "Most Popular" },
 ];
 
 export function ProductPageClient() {
@@ -62,6 +62,9 @@ export function ProductPageClient() {
                 </span>
                 <span className="text-xs text-stone-400 line-through">
                   ${size.original.toFixed(2)}
+                </span>
+                <span className="text-xs text-[#9CAF88]">
+                  ${size.perDay}/day
                 </span>
               </div>
             </button>

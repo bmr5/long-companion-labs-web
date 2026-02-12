@@ -90,12 +90,17 @@ export default function ProductsPage() {
               </div>
 
               {/* Price */}
-              <div className="flex items-baseline gap-3">
-                <span className="text-3xl font-semibold text-stone-900">$49.99</span>
-                <span className="text-lg text-stone-400 line-through">$64.99</span>
-                <span className="rounded-full bg-green-100 px-2.5 py-0.5 text-xs font-semibold text-green-700">
-                  Save 23%
-                </span>
+              <div>
+                <div className="flex items-baseline gap-3">
+                  <span className="text-3xl font-semibold text-stone-900">$49.99</span>
+                  <span className="text-lg text-stone-400 line-through">$64.99</span>
+                  <span className="rounded-full bg-green-100 px-2.5 py-0.5 text-xs font-semibold text-green-700">
+                    Save 23%
+                  </span>
+                </div>
+                <p className="mt-1 text-sm text-stone-500">
+                  As low as <span className="font-medium text-[#9CAF88]">$1.39/day</span> with the 90-chew pack
+                </p>
               </div>
 
               {/* Key Benefits */}

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { MobileNav } from "./mobile-nav";
+import { TrackedCTA } from "./tracking";
 
 const navigation = [
   { name: "TREATS", href: "/products" },
@@ -41,12 +42,14 @@ export function Hero() {
               ))}
             </div>
             <div className="hidden lg:ml-auto lg:flex lg:items-center lg:gap-x-6">
-              <Link
+              <TrackedCTA
                 href="/products"
+                event="homepage_cta_clicked"
+                position="nav"
                 className="rounded-full bg-[#C4A484] px-5 py-2 text-xs font-medium uppercase tracking-wider text-white transition-colors hover:bg-[#B8997A]"
               >
                 Try Puptides Risk-Free
-              </Link>
+              </TrackedCTA>
             </div>
           </nav>
         </div>
@@ -76,12 +79,14 @@ export function Hero() {
                   >
                     See How It Works
                   </Link>
-                  <Link
+                  <TrackedCTA
                     href="/products"
+                    event="homepage_cta_clicked"
+                    position="hero"
                     className="rounded-full bg-[#C4A484] px-6 py-3 text-sm font-medium uppercase tracking-wider text-white transition-colors hover:bg-[#B8997A]"
                   >
                     Try Puptides Risk-Free
-                  </Link>
+                  </TrackedCTA>
                 </div>
               </div>
             </div>

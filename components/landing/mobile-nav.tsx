@@ -11,6 +11,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
+import posthog from "posthog-js";
 
 const navigation = [
   { name: "TREATS", href: "/products" },
@@ -62,7 +63,10 @@ export function MobileNav() {
             <div className="py-6">
               <Link
                 href="/products"
-                onClick={() => setOpen(false)}
+                onClick={() => {
+                  posthog.capture("homepage_cta_clicked", { position: "mobile_nav" });
+                  setOpen(false);
+                }}
                 className="-mx-3 block rounded-full bg-[#C4A484] px-3 py-2.5 text-center text-sm font-medium uppercase tracking-wider text-white hover:bg-[#B8997A]"
               >
                 Try Puptides Risk-Free

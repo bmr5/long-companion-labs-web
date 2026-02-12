@@ -7,6 +7,7 @@ import { Comparison } from "components/landing/comparison";
 import { FAQ } from "components/landing/faq";
 import { CTA } from "components/landing/cta";
 import { Footer } from "components/landing/footer";
+import { HomepageTracking } from "components/landing/tracking";
 
 export const metadata = {
   title: "Puptides — BPC-157 Dog Treats for Joint Health & Recovery",
@@ -17,6 +18,7 @@ export const metadata = {
 export default function HomePage() {
   return (
     <>
+      <HomepageTracking />
       <Hero />
       <Problem />
       <Features />

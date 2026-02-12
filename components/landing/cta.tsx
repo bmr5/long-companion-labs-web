@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { TrackedCTA } from "./tracking";
 
 export function CTA() {
   return (
@@ -16,12 +16,14 @@ export function CTA() {
             our 90-day satisfaction guarantee.
           </p>
           <div className="mt-10">
-            <Link
+            <TrackedCTA
               href="/products"
+              event="homepage_cta_clicked"
+              position="bottom"
               className="inline-block rounded-full bg-[#C4A484] px-8 py-4 text-sm font-medium uppercase tracking-wider text-white transition-colors hover:bg-[#B8997A]"
             >
               Try Puptides Risk-Free
-            </Link>
+            </TrackedCTA>
           </div>
           <p className="mt-6 text-sm text-stone-500">
             90-Day Guarantee · Vet-Reviewed · Free Shipping over $50

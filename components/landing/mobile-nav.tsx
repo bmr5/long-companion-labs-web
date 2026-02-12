@@ -36,7 +36,7 @@ export function MobileNav() {
       </SheetTrigger>
       <SheetContent
         side="right"
-        className="w-full border-stone-200 bg-stone-50 sm:max-w-sm"
+        className="w-full sm:w-full sm:max-w-full border-stone-200 bg-stone-50"
       >
         <SheetHeader>
           <SheetTitle className="text-left">
@@ -45,7 +45,7 @@ export function MobileNav() {
             </span>
           </SheetTitle>
         </SheetHeader>
-        <div className="mt-6 flow-root">
+        <div className="mt-6 flow-root px-6">
           <div className="-my-6 divide-y divide-stone-200">
             <div className="space-y-2 py-6">
               {navigation.map((item) => (
@@ -65,7 +65,7 @@ export function MobileNav() {
                 onClick={() => setOpen(false)}
                 className="-mx-3 block rounded-full bg-[#C4A484] px-3 py-2.5 text-center text-sm font-medium uppercase tracking-wider text-white hover:bg-[#B8997A]"
               >
-                Shop Treats
+                Try Puptides Risk-Free
               </Link>
             </div>
           </div>

@@ -5,20 +5,20 @@ import Image from "next/image";
 
 const images = [
   {
-    src: "/products/carousel-1-studio.png",
-    alt: "Puptides BPC-157 Joint & Recovery dog treat pouch - studio shot",
+    src: "/products/carousel-1-lifestyle-golden.png",
+    alt: "Puptides BPC-157 Joint & Recovery pouch with golden retriever in kitchen",
   },
   {
-    src: "/products/carousel-2-treats-overhead.png",
-    alt: "Bone-shaped BPC-157 dog treats close-up on marble",
+    src: "/products/carousel-2-multi-breed.png",
+    alt: "Puptides BPC-157 pouch with German Shepherd, Labrador, and Cavalier King Charles",
   },
   {
-    src: "/products/carousel-3-feeding.png",
-    alt: "Senior golden retriever taking a Puptides treat from owner's hand",
+    src: "/products/carousel-3-hero-treats.png",
+    alt: "Puptides BPC-157 Joint & Recovery pouch with treats and trust badges",
   },
   {
-    src: "/products/carousel-5-infographic.png",
-    alt: "5 Ways BPC-157 Supports Your Senior Dog - benefits infographic",
+    src: "/products/carousel-4-owner-feeding.png",
+    alt: "Owner feeding a Puptides BPC-157 treat to golden retriever",
   },
 ];
 

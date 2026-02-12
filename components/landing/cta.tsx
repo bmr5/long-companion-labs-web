@@ -11,17 +11,21 @@ export function CTA() {
             Their Best Years Back
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-lg text-stone-600">
-            Science-backed BPC-157 treats that support your dog's joint health,
-            mobility, and overall vitality. See the difference for yourself.
+            Join thousands of dog owners who&apos;ve watched their senior pups
+            rediscover the joy of moving, playing, and living fully — backed by
+            our 90-day satisfaction guarantee.
           </p>
           <div className="mt-10">
             <Link
               href="/products"
               className="inline-block rounded-full bg-[#C4A484] px-8 py-4 text-sm font-medium uppercase tracking-wider text-white transition-colors hover:bg-[#B8997A]"
             >
-              Shop Treats
+              Try Puptides Risk-Free
             </Link>
           </div>
+          <p className="mt-6 text-sm text-stone-500">
+            90-Day Guarantee · Vet-Reviewed · Free Shipping over $50
+          </p>
         </div>
       </div>
     </section>

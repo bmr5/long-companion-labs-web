@@ -132,7 +132,7 @@ export default function ProductsPage() {
                   <span>🚚</span> Free shipping on orders over $50
                 </p>
                 <p className="flex items-center gap-2">
-                  <span>🔄</span> 30-day satisfaction guarantee
+                  <span>🔄</span> 90-day satisfaction guarantee
                 </p>
                 <p className="flex items-center gap-2">
                   <span>📦</span> Ships within 1-2 business days

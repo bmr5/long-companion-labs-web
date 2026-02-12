@@ -45,7 +45,7 @@ export function Hero() {
                 href="/products"
                 className="rounded-full bg-[#C4A484] px-5 py-2 text-xs font-medium uppercase tracking-wider text-white transition-colors hover:bg-[#B8997A]"
               >
-                Shop Treats
+                Try Puptides Risk-Free
               </Link>
             </div>
           </nav>
@@ -59,29 +59,28 @@ export function Hero() {
             <div className="px-6 py-20 lg:px-8 lg:py-32">
               <div className="mx-auto max-w-xl lg:mx-0">
                 <h1 className="font-serif text-5xl tracking-tight text-stone-900 sm:text-6xl lg:text-7xl">
-                  The Recovery
+                  Watch Your Dog
                   <br />
-                  Peptide Your
-                  <br />
-                  Dog Deserves
+                  Move Like a<br />
+                  Puppy Again
                 </h1>
                 <p className="mt-8 text-lg text-stone-600">
-                  Science-backed BPC-157 chews formulated specifically for dogs. 
-                  Support your pet's joint health, tissue recovery, and overall 
-                  vitality with our premium, vet-reviewed treats.
+                  A daily treat backed by 100+ studies that supports joint
+                  recovery, gut health, and mobility in aging dogs. No pills.
+                  No vet visits. Just a chew they'll love.
                 </p>
                 <div className="mt-10 flex flex-wrap items-center gap-4">
                   <Link
                     href="#benefits"
                     className="rounded-full border border-stone-300 px-6 py-3 text-sm font-medium uppercase tracking-wider text-stone-900 transition-colors hover:bg-stone-100"
                   >
-                    Learn More
+                    See How It Works
                   </Link>
                   <Link
                     href="/products"
                     className="rounded-full bg-[#C4A484] px-6 py-3 text-sm font-medium uppercase tracking-wider text-white transition-colors hover:bg-[#B8997A]"
                   >
-                    Shop Treats
+                    Try Puptides Risk-Free
                   </Link>
                 </div>
               </div>

@@ -1,7 +1,9 @@
 import { Hero } from "components/landing/hero";
+import { Problem } from "components/landing/problem";
 import { Features } from "components/landing/features";
-import { Stats } from "components/landing/stats";
 import { Testimonial } from "components/landing/testimonial";
+import { Stats } from "components/landing/stats";
+import { Comparison } from "components/landing/comparison";
 import { FAQ } from "components/landing/faq";
 import { CTA } from "components/landing/cta";
 import { Footer } from "components/landing/footer";
@@ -16,9 +18,11 @@ export default function HomePage() {
   return (
     <>
       <Hero />
+      <Problem />
       <Features />
-      <Stats />
       <Testimonial />
+      <Stats />
+      <Comparison />
       <FAQ />
       <CTA />
       <Footer />

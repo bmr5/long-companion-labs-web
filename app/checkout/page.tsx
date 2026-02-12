@@ -352,7 +352,7 @@ export default function CheckoutPage() {
               <div className="border-t border-stone-100 px-6 py-4">
                 <div className="space-y-2 text-xs text-stone-500">
                   <p>🔒 SSL encrypted checkout</p>
-                  <p>🔄 30-day satisfaction guarantee</p>
+                  <p>🔄 90-day satisfaction guarantee</p>
                   <p>🇺🇸 Made in USA · Vet reviewed</p>
                 </div>
               </div>

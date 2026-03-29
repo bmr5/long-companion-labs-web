@@ -11,7 +11,7 @@ export default async function OpengraphImage(
 ): Promise<ImageResponse> {
   const { title } = {
     ...{
-      title: process.env.SITE_NAME,
+      title: "Long Companion Labs",
     },
     ...props,
   };
@@ -27,19 +27,21 @@ export default async function OpengraphImage(
       >
         <div
           tw="flex flex-none items-center justify-center h-[120px] w-[120px] rounded-full"
-          style={{ backgroundColor: "#9CAF88" }}
+          style={{ backgroundColor: "#0D7377" }}
         >
           <span
             tw="text-5xl text-white"
             style={{ fontFamily: "Georgia, serif" }}
           >
-            GP
+            LC
           </span>
         </div>
         <p tw="mt-8 text-5xl text-stone-800" style={{ fontWeight: 400 }}>
           {title}
         </p>
-        <p tw="mt-2 text-xl text-stone-500">Premium Research Peptides</p>
+        <p tw="mt-2 text-xl text-stone-500">
+          Science-Backed Pet Longevity
+        </p>
       </div>
     ),
     {

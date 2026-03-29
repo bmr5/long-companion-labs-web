@@ -1,18 +1,17 @@
 import Link from "next/link";
 import { DisclaimerBanner } from "components/layout/disclaimer-banner";
+import { WaitlistForm } from "./waitlist-form";
 
 const helpLinks = [
-  { name: "Treats", href: "/products" },
+  { name: "Science", href: "/#benefits" },
+  { name: "How It Works", href: "/#how-it-works" },
   { name: "FAQ", href: "/#faq" },
-  { name: "Privacy Policy", href: "/privacy" },
-  { name: "Terms and Conditions", href: "/terms" },
 ];
 
 const disclaimers = [
-  "All product information available on this website is for educational purposes only.",
-  "The statements made regarding these products have not been evaluated by the Food and Drug Administration.",
-  "The efficacy of these products has not been confirmed by FDA-approved research.",
-  "These products are not intended to diagnose, treat, cure or prevent any disease.",
+  "Long Companion Labs provides veterinary telehealth services. All treatments are prescribed by licensed veterinarians.",
+  "Compounded medications are prepared by licensed pharmacies in accordance with applicable regulations.",
+  "Individual results may vary. Consult your veterinarian for medical advice specific to your pet.",
 ];
 
 export function Footer() {
@@ -22,10 +21,10 @@ export function Footer() {
       <footer className="bg-[#1a2744] text-white">
         <div className="mx-auto max-w-7xl px-6 py-12 lg:px-8">
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            {/* Column 1 - Help */}
+            {/* Column 1 - Navigation */}
             <div>
               <h3 className="text-sm font-semibold uppercase tracking-wider text-white">
-                Help
+                Navigate
               </h3>
               <ul className="mt-4 space-y-3">
                 {helpLinks.map((link) => (
@@ -41,29 +40,15 @@ export function Footer() {
               </ul>
             </div>
 
-            {/* Column 2 - Newsletter */}
+            {/* Column 2 - Waitlist */}
             <div>
               <h3 className="text-sm font-semibold uppercase tracking-wider text-white">
-                Newsletter
+                Get Early Access
               </h3>
               <p className="mt-4 text-sm text-stone-300">
-                Subscribe for dog health tips and product updates.
+                Be the first to know when we launch.
               </p>
-              <form className="mt-4">
-                <div className="flex flex-col gap-2">
-                  <input
-                    type="email"
-                    placeholder="Email address"
-                    className="rounded-lg border border-stone-600 bg-stone-800 px-4 py-2 text-sm text-white placeholder-stone-400 focus:border-[#C4A484] focus:outline-none focus:ring-1 focus:ring-[#C4A484]"
-                  />
-                  <button
-                    type="submit"
-                    className="rounded-lg bg-[#C4A484] px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-[#B8997A]"
-                  >
-                    Subscribe
-                  </button>
-                </div>
-              </form>
+              <WaitlistForm position="footer" variant="footer" />
             </div>
 
             {/* Column 3 - Disclaimers */}
@@ -73,7 +58,10 @@ export function Footer() {
               </h3>
               <ul className="mt-4 space-y-3">
                 {disclaimers.map((disclaimer, index) => (
-                  <li key={index} className="text-xs leading-relaxed text-stone-400">
+                  <li
+                    key={index}
+                    className="text-xs leading-relaxed text-stone-400"
+                  >
                     {disclaimer}
                   </li>
                 ))}
@@ -88,10 +76,20 @@ export function Footer() {
               <div className="mt-4 space-y-3 text-sm text-stone-300">
                 <p>
                   <a
-                    href="mailto:support@puptides.com"
+                    href="mailto:hello@longcompanionlabs.com"
                     className="transition-colors hover:text-white"
                   >
-                    support@puptides.com
+                    hello@longcompanionlabs.com
+                  </a>
+                </p>
+                <p>
+                  <a
+                    href="https://instagram.com/longcompanionlabs"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="transition-colors hover:text-white"
+                  >
+                    @longcompanionlabs
                   </a>
                 </p>
               </div>
@@ -102,11 +100,11 @@ export function Footer() {
           <div className="mt-12 border-t border-stone-700 pt-8">
             <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
               <Link href="/" className="font-serif text-2xl text-white">
-                Puptides
+                Long Companion Labs
               </Link>
               <p className="text-sm text-stone-400">
-                &copy; {new Date().getFullYear()} Puptides. All rights
-                reserved.
+                &copy; {new Date().getFullYear()} Long Companion Labs. All
+                rights reserved.
               </p>
             </div>
           </div>

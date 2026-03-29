@@ -14,7 +14,7 @@ export default function Icon() {
       <div
         style={{
           fontSize: 18,
-          background: "#9CAF88",
+          background: "#0D7377",
           width: "100%",
           height: "100%",
           display: "flex",
@@ -26,7 +26,7 @@ export default function Icon() {
           fontWeight: 400,
         }}
       >
-        GP
+        LC
       </div>
     ),
     {

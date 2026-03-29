@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { MobileNav } from "./mobile-nav";
-import { TrackedCTA } from "./tracking";
+import { WaitlistForm } from "./waitlist-form";
 
 const navigation = [
-  { name: "TREATS", href: "/products" },
-  { name: "RESEARCH", href: "#benefits" },
-  { name: "QUALITY", href: "#about" },
+  { name: "SCIENCE", href: "#benefits" },
+  { name: "HOW IT WORKS", href: "#how-it-works" },
+  { name: "ABOUT", href: "#about" },
   { name: "FAQ", href: "#faq" },
 ];
 
@@ -20,16 +20,14 @@ export function Hero() {
             className="flex h-16 items-center justify-between"
           >
             <Link href="/" className="-m-1.5 p-1.5">
-              <span className="sr-only">Puptides</span>
+              <span className="sr-only">Long Companion Labs</span>
               <span className="font-serif text-2xl text-stone-900">
-                Puptides
+                Long Companion Labs
               </span>
             </Link>
 
-            {/* Mobile menu - client component */}
             <MobileNav />
 
-            {/* Desktop nav */}
             <div className="hidden lg:ml-12 lg:flex lg:gap-x-10">
               {navigation.map((item) => (
                 <a
@@ -42,14 +40,12 @@ export function Hero() {
               ))}
             </div>
             <div className="hidden lg:ml-auto lg:flex lg:items-center lg:gap-x-6">
-              <TrackedCTA
-                href="/products"
-                event="homepage_cta_clicked"
-                position="nav"
-                className="rounded-full bg-[#C4A484] px-5 py-2 text-xs font-medium uppercase tracking-wider text-white transition-colors hover:bg-[#B8997A]"
+              <a
+                href="#waitlist"
+                className="rounded-full bg-[#0D7377] px-5 py-2 text-xs font-medium uppercase tracking-wider text-white transition-colors hover:bg-[#0A5C5F]"
               >
-                Try Puptides Risk-Free
-              </TrackedCTA>
+                Join the Waitlist
+              </a>
             </div>
           </nav>
         </div>
@@ -58,43 +54,33 @@ export function Hero() {
       <div className="relative pt-16">
         <div className="mx-auto max-w-7xl">
           <div className="grid min-h-[85vh] items-center lg:grid-cols-2">
-            {/* Left content */}
             <div className="px-6 py-20 lg:px-8 lg:py-32">
               <div className="mx-auto max-w-xl lg:mx-0">
                 <h1 className="font-serif text-5xl tracking-tight text-stone-900 sm:text-6xl lg:text-7xl">
-                  Watch Your Dog
+                  Give Your Dog
                   <br />
-                  Move Like a<br />
-                  Puppy Again
+                  More Good
+                  <br />
+                  Years
                 </h1>
                 <p className="mt-8 text-lg text-stone-600">
-                  A daily treat backed by 100+ studies that supports joint
-                  recovery, gut health, and mobility in aging dogs. No pills.
-                  No vet visits. Just a chew they'll love.
+                  Veterinary telehealth meets compounded peptide therapy.
+                  A licensed vet evaluates your dog, prescribes a custom
+                  treatment plan, and pharmacy-grade medication ships to your
+                  door.
                 </p>
-                <div className="mt-10 flex flex-wrap items-center gap-4">
-                  <Link
-                    href="#benefits"
-                    className="rounded-full border border-stone-300 px-6 py-3 text-sm font-medium uppercase tracking-wider text-stone-900 transition-colors hover:bg-stone-100"
-                  >
-                    See How It Works
-                  </Link>
-                  <TrackedCTA
-                    href="/products"
-                    event="homepage_cta_clicked"
-                    position="hero"
-                    className="rounded-full bg-[#C4A484] px-6 py-3 text-sm font-medium uppercase tracking-wider text-white transition-colors hover:bg-[#B8997A]"
-                  >
-                    Try Puptides Risk-Free
-                  </TrackedCTA>
+                <div className="mt-10 flex flex-col gap-4">
+                  <WaitlistForm position="hero" />
+                  <p className="text-sm text-stone-500">
+                    Join the waitlist for early access. No spam, ever.
+                  </p>
                 </div>
               </div>
             </div>
 
-            {/* Right image */}
             <div className="relative flex h-[50vh] items-end lg:h-full">
               <Image
-                alt="Golden retriever running through sunlit grass"
+                alt="Happy senior dog in golden sunlight"
                 src="/hero.png"
                 fill
                 priority

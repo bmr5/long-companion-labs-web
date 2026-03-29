@@ -4,27 +4,27 @@ import { NumberTicker } from "@/components/ui/number-ticker";
 
 const stats = [
   {
-    value: 10000,
+    value: 100,
     suffix: "+",
-    label: "Happy Dogs",
+    label: "Published Studies on BPC-157",
     decimals: 0,
   },
   {
-    value: 97,
+    value: 89,
     suffix: "%",
-    label: "Owner Satisfaction",
+    label: "Reported Mobility Improvement",
     decimals: 0,
   },
   {
     value: 100,
     suffix: "%",
-    label: "Vet Reviewed",
+    label: "Vet-Supervised",
     decimals: 0,
   },
   {
     value: 1,
     suffix: "",
-    label: "Made in USA",
+    label: "USA Compounding Pharmacies",
     decimals: 0,
     hideValue: true,
   },
@@ -36,7 +36,7 @@ export function Stats() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-serif text-3xl tracking-tight text-stone-900 sm:text-4xl">
-            Trusted by Dog Owners Nationwide
+            Built on Science, Guided by Vets
           </h2>
         </div>
         <div className="mx-auto mt-16 max-w-4xl">
@@ -45,7 +45,7 @@ export function Stats() {
               <div key={stat.label} className="flex flex-col gap-2">
                 {stat.hideValue ? (
                   <dt className="font-serif text-2xl tracking-tight text-stone-900 sm:text-3xl">
-                    <span className="text-[#9CAF88]">🇺🇸</span>
+                    <span className="text-[#0D7377]">🇺🇸</span>
                   </dt>
                 ) : (
                   <dt className="font-serif text-4xl tracking-tight text-stone-900 sm:text-5xl">
@@ -54,7 +54,7 @@ export function Stats() {
                       decimalPlaces={stat.decimals}
                       className="text-stone-900"
                     />
-                    <span className="text-[#9CAF88]">{stat.suffix}</span>
+                    <span className="text-[#0D7377]">{stat.suffix}</span>
                   </dt>
                 )}
                 <dd className="text-sm font-medium uppercase tracking-wider text-stone-500">

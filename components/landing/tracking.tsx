@@ -31,27 +31,3 @@ export function HomepageTracking() {
 
   return null;
 }
-
-export function TrackedCTA({
-  href,
-  event,
-  position,
-  children,
-  className,
-}: {
-  href: string;
-  event: string;
-  position: string;
-  children: React.ReactNode;
-  className: string;
-}) {
-  const handleClick = () => {
-    posthog.capture(event, { position });
-  };
-
-  return (
-    <a href={href} onClick={handleClick} className={className}>
-      {children}
-    </a>
-  );
-}

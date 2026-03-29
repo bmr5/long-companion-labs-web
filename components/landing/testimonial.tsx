@@ -3,10 +3,10 @@ const testimonials = [
     dog: "Max — Golden Retriever, 12 yrs",
     stars: 5,
     before: "Could barely stand after naps, stopped playing fetch entirely.",
-    after: "Back to fetching and running in the yard after 3 weeks.",
+    after: "Back to fetching and running in the yard after 3 weeks of treatment.",
     quote:
-      "My 12-year-old Golden Retriever Max was struggling with joint stiffness. After just 3 weeks on Puptides, he's back to playing fetch and running like a puppy again!",
-    author: "Sarah Johnson",
+      "Our vet put Max on a peptide protocol and the difference was unbelievable. He's moving like he did years ago. I wish we'd found this sooner.",
+    author: "Sarah J.",
     location: "Denver, CO",
   },
   {
@@ -15,8 +15,8 @@ const testimonials = [
     before: "Digestive issues, low energy, barely eating.",
     after: "More active, appetite back to normal, bright-eyed again.",
     quote:
-      "Our senior Lab mix Charlie had digestive issues and low energy. The Daily Wellness Chews transformed him — he's more active and his appetite is back to normal.",
-    author: "Mike Rodriguez",
+      "The telehealth consult was so easy and the vet really took the time to understand Charlie's history. The compounded medication has been a game changer.",
+    author: "Mike R.",
     location: "Austin, TX",
   },
   {
@@ -25,8 +25,8 @@ const testimonials = [
     before: "Lost mobility and enthusiasm for walks and play.",
     after: "Regained her zest for life, moving freely again.",
     quote:
-      "I was skeptical about peptide supplements, but seeing my 10-year-old German Shepherd Luna regain her mobility and zest for life has made me a believer. Puptides works!",
-    author: "Jennifer Chen",
+      "I was skeptical, but having an actual vet prescribe and monitor Luna's treatment gave me confidence. The results speak for themselves.",
+    author: "Jennifer C.",
     location: "Seattle, WA",
   },
 ];
@@ -37,10 +37,10 @@ export function Testimonial() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="mb-16 text-center">
           <h2 className="font-serif text-4xl tracking-tight text-stone-900 sm:text-5xl">
-            Happy Dogs, Happy Owners
+            Stories from Pet Parents
           </h2>
           <p className="mt-6 text-lg text-stone-600">
-            Real stories from dog owners who've seen the Puptides difference
+            Real results from dogs on veterinary-guided peptide therapy
           </p>
         </div>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
@@ -54,7 +54,7 @@ export function Testimonial() {
               </p>
               <div className="mt-2 flex items-center gap-0.5">
                 {Array.from({ length: t.stars }).map((_, i) => (
-                  <span key={i} className="text-[#C4A484]">
+                  <span key={i} className="text-[#0D7377]">
                     &#9733;
                   </span>
                 ))}

@@ -7,34 +7,34 @@ import {
 
 const faqs = [
   {
-    question: "What is BPC-157 and is it safe for dogs?",
+    question: "What is peptide therapy for dogs?",
     answer:
-      "BPC-157 is a naturally occurring peptide that supports tissue repair and healing. Our formulation is specifically designed for dogs and has been reviewed by veterinarians for safety. Always consult your vet before starting any new supplement.",
+      "Peptide therapy uses naturally occurring compounds like BPC-157 to support tissue repair, joint health, and recovery. Unlike over-the-counter supplements, our peptides are prescribed by a licensed vet and compounded by a regulated pharmacy — ensuring clinical-grade quality and proper dosing for your dog.",
   },
   {
-    question: "How do I know which formula is right for my dog?",
+    question: "How does the telehealth consultation work?",
     answer:
-      "Choose Joint & Recovery Chews for mobility issues, Daily Wellness Chews for general health maintenance, or Senior Dog Formula for dogs 7+ years old. When in doubt, consult your veterinarian for personalized advice.",
+      "After you join the waitlist and we launch, you'll book a virtual appointment with one of our licensed veterinarians. They'll review your dog's medical history, current symptoms, and any bloodwork to determine if peptide therapy is right for your pet. The entire process happens from home — no clinic visit needed.",
   },
   {
-    question: "How long does it take to see results?",
+    question: "Is this safe for my dog?",
     answer:
-      "Most dog owners notice improvements in mobility and energy within 2-4 weeks of consistent use. Individual results may vary based on your dog's age, health condition, and consistency of use.",
+      "Yes. Every treatment plan is prescribed and supervised by a licensed veterinarian. The medications are prepared by licensed compounding pharmacies following strict quality standards. BPC-157 has been studied in over 100 published papers with an excellent safety profile.",
   },
   {
-    question: "What's the proper dosage for my dog?",
+    question: "How is this different from supplements I can buy online?",
     answer:
-      "Each chew is pre-dosed for optimal effectiveness. Give one chew daily for dogs under 50 lbs, or as directed by your veterinarian. Our treats are formulated to be safe and effective at the recommended dosage.",
+      "Over-the-counter supplements are unregulated and often under-dosed. Long Companion Labs provides prescription-grade, pharmacy-compounded medications — prescribed by a vet who knows your dog's specific needs. It's the difference between a vitamin and a real treatment.",
   },
   {
-    question: "Are there any side effects?",
+    question: "How long until I see results?",
     answer:
-      "BPC-157 is generally well-tolerated by dogs. Some pets may experience mild digestive upset initially. If you notice any concerning symptoms, discontinue use and consult your veterinarian immediately.",
+      "Most pet owners report noticeable improvements in mobility and energy within 2–4 weeks of starting their prescribed protocol. Your vet will monitor progress and adjust the treatment plan as needed.",
   },
   {
-    question: "Can I give these to puppies or pregnant dogs?",
+    question: "When will Long Companion Labs launch?",
     answer:
-      "Our treats are formulated for adult dogs. Consult your veterinarian before giving any supplements to puppies under 1 year old, pregnant, or nursing dogs.",
+      "We're currently in the final stages of preparation. Join the waitlist to get early access and be the first to know when we open for consultations.",
   },
 ];
 
@@ -47,7 +47,7 @@ export function FAQ() {
             Frequently Asked Questions
           </h2>
           <p className="mt-4 text-lg text-stone-600">
-            Everything you need to know about BPC-157 for your dog.
+            Everything you need to know about Long Companion Labs.
           </p>
           <Accordion type="single" collapsible className="mt-12">
             {faqs.map((faq, index) => (

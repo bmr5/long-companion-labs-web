@@ -4,28 +4,28 @@ const rows = [
     nsaids: "Masks pain only",
     glucosamine: "Partial cartilage support",
     seniorFood: "General nutrition",
-    puptides: "Supports tissue repair at the cellular level",
+    lcl: "Targeted tissue repair via Rx peptides",
+  },
+  {
+    label: "Vet oversight",
+    nsaids: "Prescription required",
+    glucosamine: "None",
+    seniorFood: "None",
+    lcl: "Full telehealth consult + ongoing monitoring",
   },
   {
     label: "Side effects",
     nsaids: "Liver & kidney risk with long-term use",
     glucosamine: "Minimal",
     seniorFood: "None",
-    puptides: "None reported",
+    lcl: "None reported in studies",
   },
   {
-    label: "Time to results",
-    nsaids: "Hours (symptom relief only)",
-    glucosamine: "2–4 months",
-    seniorFood: "Minimal change",
-    puptides: "2–4 weeks",
-  },
-  {
-    label: "Ease of use",
-    nsaids: "Pill (often refused)",
-    glucosamine: "Pill or powder",
-    seniorFood: "Mixed into meals",
-    puptides: "A treat they love",
+    label: "Personalization",
+    nsaids: "One-size-fits-all",
+    glucosamine: "One-size-fits-all",
+    seniorFood: "Breed/age based",
+    lcl: "Custom Rx for your dog's specific needs",
   },
 ];
 
@@ -33,7 +33,7 @@ const columns = [
   { key: "nsaids" as const, name: "NSAIDs" },
   { key: "glucosamine" as const, name: "Glucosamine" },
   { key: "seniorFood" as const, name: "Senior Food" },
-  { key: "puptides" as const, name: "Puptides", highlight: true },
+  { key: "lcl" as const, name: "Long Companion Labs", highlight: true },
 ];
 
 export function Comparison() {
@@ -42,7 +42,7 @@ export function Comparison() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="mb-12 text-center">
           <h2 className="font-serif text-4xl tracking-tight text-stone-900 sm:text-5xl">
-            Why Dog Owners Are Switching to Puptides
+            A Better Approach to Senior Dog Care
           </h2>
         </div>
 
@@ -59,7 +59,7 @@ export function Comparison() {
                     key={col.key}
                     className={`px-6 py-4 text-xs font-medium uppercase tracking-wider ${
                       col.highlight
-                        ? "bg-[#C4A484]/10 text-[#A0845C]"
+                        ? "bg-[#0D7377]/10 text-[#0D7377]"
                         : "text-stone-500"
                     }`}
                   >
@@ -84,7 +84,7 @@ export function Comparison() {
                       key={col.key}
                       className={`px-6 py-4 ${
                         col.highlight
-                          ? "bg-[#C4A484]/10 font-medium text-stone-900"
+                          ? "bg-[#0D7377]/10 font-medium text-stone-900"
                           : "text-stone-600"
                       }`}
                     >
@@ -112,12 +112,12 @@ export function Comparison() {
                   <div
                     key={col.key}
                     className={`flex items-start justify-between gap-4 rounded-lg px-3 py-2 ${
-                      col.highlight ? "bg-[#C4A484]/10" : ""
+                      col.highlight ? "bg-[#0D7377]/10" : ""
                     }`}
                   >
                     <span
                       className={`shrink-0 font-medium ${
-                        col.highlight ? "text-[#A0845C]" : "text-stone-500"
+                        col.highlight ? "text-[#0D7377]" : "text-stone-500"
                       }`}
                     >
                       {col.name}

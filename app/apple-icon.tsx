@@ -14,7 +14,7 @@ export default function AppleIcon() {
       <div
         style={{
           fontSize: 100,
-          background: "#9CAF88",
+          background: "#0D7377",
           width: "100%",
           height: "100%",
           display: "flex",
@@ -27,7 +27,7 @@ export default function AppleIcon() {
           letterSpacing: "-2px",
         }}
       >
-        GP
+        LC
       </div>
     ),
     {

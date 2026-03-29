@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { Menu } from "lucide-react";
-import Link from "next/link";
 import {
   Sheet,
   SheetContent,
@@ -14,9 +13,9 @@ import { Button } from "@/components/ui/button";
 import posthog from "posthog-js";
 
 const navigation = [
-  { name: "TREATS", href: "/products" },
-  { name: "WELLNESS", href: "#benefits" },
-  { name: "SCIENCE", href: "#about" },
+  { name: "SCIENCE", href: "#benefits" },
+  { name: "HOW IT WORKS", href: "#how-it-works" },
+  { name: "ABOUT", href: "#about" },
   { name: "FAQ", href: "#faq" },
 ];
 
@@ -37,12 +36,12 @@ export function MobileNav() {
       </SheetTrigger>
       <SheetContent
         side="right"
-        className="w-full sm:w-full sm:max-w-full border-stone-200 bg-stone-50"
+        className="w-full border-stone-200 bg-stone-50 sm:w-full sm:max-w-full"
       >
         <SheetHeader>
           <SheetTitle className="text-left">
             <span className="font-serif text-2xl text-stone-900">
-              Puptides
+              Long Companion Labs
             </span>
           </SheetTitle>
         </SheetHeader>
@@ -61,16 +60,18 @@ export function MobileNav() {
               ))}
             </div>
             <div className="py-6">
-              <Link
-                href="/products"
+              <a
+                href="#waitlist"
                 onClick={() => {
-                  posthog.capture("homepage_cta_clicked", { position: "mobile_nav" });
+                  posthog.capture("waitlist_cta_clicked", {
+                    position: "mobile_nav",
+                  });
                   setOpen(false);
                 }}
-                className="-mx-3 block rounded-full bg-[#C4A484] px-3 py-2.5 text-center text-sm font-medium uppercase tracking-wider text-white hover:bg-[#B8997A]"
+                className="-mx-3 block rounded-full bg-[#0D7377] px-3 py-2.5 text-center text-sm font-medium uppercase tracking-wider text-white hover:bg-[#0A5C5F]"
               >
-                Try Puptides Risk-Free
-              </Link>
+                Join the Waitlist
+              </a>
             </div>
           </div>
         </div>

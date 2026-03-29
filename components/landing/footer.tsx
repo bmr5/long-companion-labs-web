@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { DisclaimerBanner } from "components/layout/disclaimer-banner";
-import { WaitlistForm } from "./waitlist-form";
+import { LeadMagnetForm } from "./lead-magnet-form";
 
 const helpLinks = [
-  { name: "Science", href: "/#benefits" },
-  { name: "How It Works", href: "/#how-it-works" },
-  { name: "FAQ", href: "/#faq" },
+  { name: "Science", href: "/science" },
+  { name: "How It Works", href: "/how-it-works" },
+  { name: "About", href: "/about" },
+  { name: "Learn", href: "/learn" },
+  { name: "FAQ", href: "/faq" },
 ];
 
 const disclaimers = [
@@ -40,15 +42,15 @@ export function Footer() {
               </ul>
             </div>
 
-            {/* Column 2 - Waitlist */}
+            {/* Column 2 - Lead Magnet */}
             <div>
               <h3 className="text-sm font-semibold uppercase tracking-wider text-white">
-                Get Early Access
+                Free Longevity Guide
               </h3>
               <p className="mt-4 text-sm text-stone-300">
-                Be the first to know when we launch.
+                5 science-backed ways to help your aging dog thrive.
               </p>
-              <WaitlistForm position="footer" variant="footer" />
+              <LeadMagnetForm source="footer" variant="footer" />
             </div>
 
             {/* Column 3 - Disclaimers */}

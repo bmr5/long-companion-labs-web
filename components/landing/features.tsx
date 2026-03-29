@@ -1,35 +1,36 @@
-import { Video, Stethoscope, Pill, Truck } from "lucide-react";
+import Link from "next/link";
+import { Video, Stethoscope, Pill, Truck, ArrowRight } from "lucide-react";
 
 const features = [
   {
-    name: "Veterinary Telehealth Consult",
+    name: "Vet Telehealth Consult",
     description:
-      "Connect with a licensed veterinarian from home. They'll review your dog's history, symptoms, and bloodwork to build a personalized treatment plan.",
+      "Connect with a licensed veterinarian from home — no clinic visit needed.",
     icon: Video,
   },
   {
     name: "Custom Prescription",
     description:
-      "Your vet prescribes a peptide protocol tailored to your dog's specific needs — dosage, compound, and duration based on clinical evidence.",
+      "Your vet prescribes a peptide protocol tailored to your dog's specific needs.",
     icon: Stethoscope,
   },
   {
     name: "Pharmacy-Compounded Medication",
     description:
-      "Your dog's prescription is filled by a licensed compounding pharmacy. Clinical-grade peptides, not over-the-counter supplements.",
+      "Clinical-grade peptides from a licensed 503A compounding pharmacy.",
     icon: Pill,
   },
   {
     name: "Delivered to Your Door",
     description:
-      "Temperature-controlled shipping ensures your dog's medication arrives fresh and ready. Ongoing refills handled automatically.",
+      "Temperature-controlled shipping with dosing instructions included.",
     icon: Truck,
   },
 ];
 
 export function Features() {
   return (
-    <section id="how-it-works" className="bg-white py-24 sm:py-32">
+    <section className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-serif text-4xl tracking-tight text-stone-900 sm:text-5xl">
@@ -37,7 +38,7 @@ export function Features() {
           </h2>
           <p className="mt-6 text-lg text-stone-600">
             Veterinary-guided peptide therapy, from consultation to your
-            doorstep. No clinic visits required.
+            doorstep.
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-5xl sm:mt-20">
@@ -68,6 +69,15 @@ export function Features() {
               </div>
             ))}
           </div>
+        </div>
+        <div className="mt-12 text-center">
+          <Link
+            href="/how-it-works"
+            className="inline-flex items-center gap-2 text-sm font-medium uppercase tracking-wider text-[#0D7377] transition-colors hover:text-[#0A5C5F]"
+          >
+            Learn more about our process
+            <ArrowRight className="size-4" />
+          </Link>
         </div>
       </div>
     </section>

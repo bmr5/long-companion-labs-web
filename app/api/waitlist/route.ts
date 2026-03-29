@@ -4,7 +4,7 @@ import { getSupabase } from "lib/supabase";
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
-    const { email } = body;
+    const { email, source } = body;
 
     if (!email || !email.includes("@")) {
       return NextResponse.json(
@@ -15,7 +15,7 @@ export async function POST(req: NextRequest) {
 
     const { error } = await getSupabase().from("waitlist").insert({
       email,
-      source: req.headers.get("referer") || "direct",
+      source: source || req.headers.get("referer") || "direct",
       created_at: new Date().toISOString(),
     });
 

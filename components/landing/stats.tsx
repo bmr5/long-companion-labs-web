@@ -7,18 +7,22 @@ const stats = [
     value: 100,
     suffix: "+",
     label: "Published Studies on BPC-157",
+    sublabel: "Across species, in peer-reviewed journals",
     decimals: 0,
   },
   {
-    value: 89,
-    suffix: "%",
-    label: "Reported Mobility Improvement",
+    value: 0,
+    suffix: "",
+    label: "Adverse Events in Safety Studies",
+    sublabel: "Xu et al. 2020 — tested in mice, rats, rabbits, and dogs",
     decimals: 0,
+    isZero: true,
   },
   {
     value: 100,
     suffix: "%",
     label: "Vet-Supervised",
+    sublabel: "Every treatment prescribed by a licensed veterinarian",
     decimals: 0,
   },
   {
@@ -27,6 +31,7 @@ const stats = [
     label: "USA Compounding Pharmacies",
     decimals: 0,
     hideValue: true,
+    sublabel: "Licensed 503A pharmacy compounding",
   },
 ];
 
@@ -47,6 +52,10 @@ export function Stats() {
                   <dt className="font-serif text-2xl tracking-tight text-stone-900 sm:text-3xl">
                     <span className="text-[#0D7377]">🇺🇸</span>
                   </dt>
+                ) : stat.isZero ? (
+                  <dt className="font-serif text-4xl tracking-tight text-stone-900 sm:text-5xl">
+                    <span className="text-stone-900">0</span>
+                  </dt>
                 ) : (
                   <dt className="font-serif text-4xl tracking-tight text-stone-900 sm:text-5xl">
                     <NumberTicker
@@ -60,6 +69,9 @@ export function Stats() {
                 <dd className="text-sm font-medium uppercase tracking-wider text-stone-500">
                   {stat.label}
                 </dd>
+                {stat.sublabel && (
+                  <dd className="text-xs text-stone-400">{stat.sublabel}</dd>
+                )}
               </div>
             ))}
           </dl>

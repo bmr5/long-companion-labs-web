@@ -23,22 +23,40 @@ const generalFaqs = [
   {
     question: "What is BPC-157?",
     answer:
-      "BPC-157 (Body Protection Compound-157) is a 15-amino-acid peptide originally derived from a protective protein found in human gastric juice. It has been studied in over 100 peer-reviewed publications and has shown remarkable potential for tissue repair, reducing inflammation, and promoting healing in tendons, ligaments, muscles, and the GI tract.",
+      "BPC-157 (Body Protection Compound-157) is a 15-amino-acid peptide originally derived from a protective protein found in human gastric juice. It has been studied in over 100 peer-reviewed publications across multiple species. The 2022 beagle pharmacokinetic study (He et al., Frontiers in Pharmacology) showed 45–51% intramuscular bioavailability in dogs — significantly higher than in rats — with no accumulation after 7 days of repeat dosing.",
   },
   {
     question: "Is this safe for my dog?",
     answer:
-      "Yes. Every treatment plan is prescribed and supervised by a licensed veterinarian. The medications are prepared by licensed compounding pharmacies following strict quality standards. BPC-157 has been studied in over 100 published papers with an excellent safety profile — no toxic effects have been reported even at high doses.",
-  },
-  {
-    question: "How is this different from supplements I can buy online?",
-    answer:
-      "Over-the-counter supplements are unregulated and often under-dosed. Long Companion Labs provides prescription-grade, pharmacy-compounded medications — prescribed by a vet who knows your dog's specific needs. It's the difference between a vitamin and a real treatment. Our medications come from licensed 503A compounding pharmacies with verified potency and purity.",
+      "Every treatment plan is prescribed and supervised by a licensed veterinarian. The medications are prepared by licensed compounding pharmacies following strict quality standards. In the most comprehensive safety study to date (Xu et al. 2020), BPC-157 was tested in mice, rats, rabbits, and dogs with zero deaths at any dose. Researchers could not identify a toxic dose, and the only finding — a decrease in creatinine — occurred at 333x the therapeutic dose and resolved on its own within two weeks.",
   },
   {
     question: "What conditions can peptide therapy help with?",
     answer:
-      "BPC-157 therapy is most commonly used for age-related mobility issues, joint stiffness, arthritis, tendon and ligament injuries, post-surgical recovery, and general decline in vitality in senior dogs. Your veterinarian will determine whether peptide therapy is appropriate for your dog's specific condition during the consultation.",
+      "BPC-157 therapy is most commonly considered for age-related mobility issues, joint stiffness, arthritis, tendon and ligament injuries, post-surgical recovery, and general decline in vitality in senior dogs. Your veterinarian will determine whether peptide therapy is appropriate for your dog's specific condition during the consultation.",
+  },
+];
+
+const regulatoryFaqs = [
+  {
+    question: "Is BPC-157 FDA-approved?",
+    answer:
+      "No. BPC-157 is not FDA-approved for any use — human or veterinary. There are no completed Phase III clinical trials. We operate through veterinary compounding: a licensed veterinarian evaluates your dog and writes a patient-specific prescription, which is then filled by a licensed 503A compounding pharmacy. This is the same legal framework used for many veterinary compounded medications.",
+  },
+  {
+    question: "Is this legal?",
+    answer:
+      "Yes. Veterinary compounding is governed by FDA Guidance for Industry (GFI) #256, finalized in April 2022. The process works like this: a licensed veterinarian establishes a veterinarian-client-patient relationship (VCPR), evaluates your dog, and writes a patient-specific prescription. A licensed 503A compounding pharmacy then prepares the medication. This is the proper medical channel for compounded veterinary medications.",
+  },
+  {
+    question: "How is this different from supplements I see online?",
+    answer:
+      "This is an important distinction. Some companies sell BPC-157 as a pet \"supplement,\" but there is no legal dietary supplement category for animals. The Dietary Supplement Health and Education Act (DSHEA) does not apply to animals — the FDA determined this in 1996. Every \"pet supplement\" containing BPC-157 is operating without a recognized legal framework. We use the proper medical channel: veterinary prescription + licensed pharmacy compounding. It costs more, but it's the right way to do this.",
+  },
+  {
+    question: "Why should I trust a compounded medication over a supplement?",
+    answer:
+      "Compounded medications are prepared by licensed pharmacies that are inspected and regulated. They use pharmaceutical-grade ingredients with verified potency and purity. Supplements sold online have no required testing, no dosing oversight, and no guarantee of what's actually in the product. When you're giving something to your dog, quality control matters.",
   },
 ];
 
@@ -56,12 +74,17 @@ const processFaqs = [
   {
     question: "How long until I see results?",
     answer:
-      "Most pet owners report noticeable improvements in mobility and energy within 2–4 weeks of starting their prescribed protocol. Some dogs show improvement sooner. Your vet will monitor progress and adjust the treatment plan as needed.",
+      "Most pet owners report noticeable improvements in mobility and energy within 2–4 weeks of starting their prescribed protocol. Some dogs show improvement sooner. Your vet will monitor progress and adjust the treatment plan as needed. We track outcomes for every patient to build real-world evidence.",
   },
   {
     question: "How is the medication administered?",
     answer:
-      "The specific administration method depends on your vet's prescription. Your shipment will include clear dosing instructions, and your vet will walk you through the process during your consultation. Most pet owners find administration straightforward after the first few days.",
+      "The specific administration method depends on your vet's prescription and is tailored to your dog's size and needs. Your shipment will include clear dosing instructions, and your vet will walk you through the process during your consultation. Most pet owners find administration straightforward after the first few days.",
+  },
+  {
+    question: "Why is the dosing weight-based?",
+    answer:
+      "Dogs range from under 5 pounds to over 150 pounds — roughly a 30x difference in body weight. A flat dose that's appropriate for a Labrador could be dangerous for a Chihuahua, or sub-therapeutic for a Great Dane. Weight-based dosing is standard veterinary pharmacology. Our protocols are informed by the pharmacokinetic data from the He et al. 2022 beagle study, which tested doses at 6, 30, and 150 mcg/kg.",
   },
   {
     question: "Can I use this alongside my dog's current medications?",
@@ -84,7 +107,7 @@ const logisticsFaqs = [
   {
     question: "Do you ship nationwide?",
     answer:
-      "We're working toward nationwide availability. Veterinary telehealth regulations vary by state, and compounded medication shipping has its own regulatory requirements. We'll share coverage details as we launch.",
+      "We're working toward nationwide availability. Veterinary telehealth regulations vary by state, and compounded medication shipping has its own regulatory requirements. Most states allow telehealth VCPR establishment, but a handful still require an in-person exam on file. We'll share coverage details as we launch.",
   },
   {
     question: "What about refills?",
@@ -103,8 +126,9 @@ export default function FAQPage() {
             Frequently Asked Questions
           </h1>
           <p className="mt-6 text-xl text-stone-600">
-            Everything you need to know about Long Companion Labs and
-            veterinary peptide therapy.
+            Everything you need to know about Long Companion Labs and veterinary
+            peptide therapy — including the questions most companies
+            don&apos;t answer.
           </p>
         </div>
       </section>
@@ -134,8 +158,37 @@ export default function FAQPage() {
         </div>
       </section>
 
-      {/* Process */}
+      {/* Regulatory Transparency */}
       <section className="bg-white py-20 sm:py-24">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8">
+          <h2 className="font-serif text-3xl tracking-tight text-stone-900 sm:text-4xl">
+            Regulatory &amp; Legal
+          </h2>
+          <p className="mt-4 text-lg text-stone-600">
+            We believe in full transparency about what BPC-157 is and
+            isn&apos;t, and how we operate.
+          </p>
+          <Accordion type="single" collapsible className="mt-8">
+            {regulatoryFaqs.map((faq, index) => (
+              <AccordionItem
+                key={faq.question}
+                value={`regulatory-${index}`}
+                className="border-stone-200"
+              >
+                <AccordionTrigger className="text-left font-serif text-lg text-stone-900 hover:no-underline">
+                  {faq.question}
+                </AccordionTrigger>
+                <AccordionContent className="text-base leading-relaxed text-stone-600">
+                  {faq.answer}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </div>
+      </section>
+
+      {/* Process */}
+      <section className="border-t border-stone-200 bg-stone-50 py-20 sm:py-24">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <h2 className="font-serif text-3xl tracking-tight text-stone-900 sm:text-4xl">
             The Process
@@ -160,7 +213,7 @@ export default function FAQPage() {
       </section>
 
       {/* Logistics */}
-      <section className="border-t border-stone-200 bg-stone-50 py-20 sm:py-24">
+      <section className="bg-white py-20 sm:py-24">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <h2 className="font-serif text-3xl tracking-tight text-stone-900 sm:text-4xl">
             Pricing &amp; Logistics

@@ -19,7 +19,19 @@ export function Problem() {
             </li>
           ))}
         </ul>
-        <p className="mt-10 text-lg text-stone-600">
+        <div className="mx-auto mt-10 max-w-xl text-left">
+          <p className="text-lg text-stone-600">
+            Most owners try the standard options first.{" "}
+            <strong className="text-stone-900">NSAIDs</strong> reduce pain but
+            carry real risks — liver damage, kidney damage, and GI ulceration
+            with long-term use.{" "}
+            <strong className="text-stone-900">Glucosamine supplements</strong>{" "}
+            may help marginally, but they don&apos;t address the underlying
+            tissue damage. Neither approach supports the body&apos;s own
+            repair mechanisms.
+          </p>
+        </div>
+        <p className="mt-8 text-lg text-stone-600">
           These aren&apos;t just signs of aging — they&apos;re signs your
           dog&apos;s body needs support its current routine isn&apos;t
           providing.{" "}

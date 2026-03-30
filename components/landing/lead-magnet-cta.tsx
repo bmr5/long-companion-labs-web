@@ -9,8 +9,8 @@ export function LeadMagnetCTA({ source }: { source: string }) {
             The Senior Dog Longevity Guide
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-lg text-stone-600">
-            5 science-backed ways to help your aging dog live longer, move
-            better, and thrive — delivered free to your inbox.
+            What the research says about BPC-157, joint health, and helping
+            your dog thrive after age 7 — delivered free to your inbox.
           </p>
           <div className="mt-8 flex justify-center">
             <LeadMagnetForm source={source} variant="inline" />

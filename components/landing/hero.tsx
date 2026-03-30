@@ -20,16 +20,22 @@ export function Hero() {
                   Years
                 </h1>
 
-                {/* Credibility stats */}
+                <p className="mt-6 text-lg text-stone-600">
+                  Veterinary-prescribed BPC-157 peptide therapy. Backed by
+                  research. Compounded by licensed pharmacies. Delivered to your
+                  door.
+                </p>
+
+                {/* Credibility badges with specific data */}
                 <div className="mt-8 flex flex-wrap gap-3">
                   <div className="rounded-lg border border-[#0D7377]/20 bg-[#0D7377]/5 px-4 py-2">
                     <p className="text-sm font-medium text-[#0D7377]">
-                      100+ peer-reviewed studies on BPC-157
+                      45–51% bioavailability in dogs (He et al. 2022)
                     </p>
                   </div>
                   <div className="rounded-lg border border-[#0D7377]/20 bg-[#0D7377]/5 px-4 py-2">
                     <p className="text-sm font-medium text-[#0D7377]">
-                      Trusted by integrative veterinarians
+                      Zero adverse events in safety studies
                     </p>
                   </div>
                   <div className="rounded-lg border border-[#0D7377]/20 bg-[#0D7377]/5 px-4 py-2">
@@ -39,11 +45,6 @@ export function Hero() {
                   </div>
                 </div>
 
-                <p className="mt-8 text-lg text-stone-600">
-                  Veterinary telehealth meets compounded peptide therapy. A
-                  licensed vet evaluates your dog, prescribes a custom treatment
-                  plan, and pharmacy-grade medication ships to your door.
-                </p>
                 <div id="guide" className="mt-10 flex flex-col gap-4">
                   <LeadMagnetForm source="hero" />
                   <p className="text-sm text-stone-500">

@@ -1,31 +1,38 @@
 const rows = [
   {
-    label: "Root cause",
-    nsaids: "Masks pain only",
-    glucosamine: "Partial cartilage support",
-    seniorFood: "General nutrition",
-    lcl: "Targeted tissue repair via Rx peptides",
+    label: "Approach",
+    nsaids: "Blocks pain & inflammation systemically",
+    glucosamine: "Provides cartilage building blocks",
+    seniorFood: "General nutritional support",
+    lcl: "Supports tissue repair via multiple pathways",
   },
   {
     label: "Vet oversight",
     nsaids: "Prescription required",
-    glucosamine: "None",
+    glucosamine: "None — available over the counter",
     seniorFood: "None",
     lcl: "Full telehealth consult + ongoing monitoring",
   },
   {
-    label: "Side effects",
-    nsaids: "Liver & kidney risk with long-term use",
-    glucosamine: "Minimal",
+    label: "Long-term risks",
+    nsaids: "Liver & kidney risk with prolonged use",
+    glucosamine: "Minimal known risks",
     seniorFood: "None",
-    lcl: "None reported in studies",
+    lcl: "No adverse events in published safety studies",
   },
   {
-    label: "Personalization",
-    nsaids: "One-size-fits-all",
+    label: "Dosing",
+    nsaids: "Weight-based, standardized",
     glucosamine: "One-size-fits-all",
     seniorFood: "Breed/age based",
-    lcl: "Custom Rx for your dog's specific needs",
+    lcl: "Weight-based Rx using published PK data",
+  },
+  {
+    label: "Quality control",
+    nsaids: "FDA-approved manufacturing",
+    glucosamine: "No required testing or verification",
+    seniorFood: "AAFCO standards",
+    lcl: "Licensed 503A pharmacy, verified potency",
   },
 ];
 
@@ -44,6 +51,11 @@ export function Comparison() {
           <h2 className="font-serif text-4xl tracking-tight text-stone-900 sm:text-5xl">
             A Better Approach to Senior Dog Care
           </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-lg text-stone-600">
+            Each option has a role. We believe peptide therapy fills a gap that
+            existing approaches leave open — targeted tissue repair under
+            veterinary supervision.
+          </p>
         </div>
 
         {/* Desktop table */}

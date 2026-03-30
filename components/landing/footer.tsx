@@ -11,9 +11,10 @@ const helpLinks = [
 ];
 
 const disclaimers = [
-  "Long Companion Labs provides veterinary telehealth services. All treatments are prescribed by licensed veterinarians.",
+  "Long Companion Labs does not provide veterinary medical advice. All treatments are prescribed by licensed veterinarians.",
   "Compounded medications are prepared by licensed pharmacies in accordance with applicable regulations.",
-  "Individual results may vary. Consult your veterinarian for medical advice specific to your pet.",
+  "BPC-157 is not FDA-approved for any use. Individual results may vary.",
+  "Consult your veterinarian for medical advice specific to your pet.",
 ];
 
 export function Footer() {

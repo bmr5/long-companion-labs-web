@@ -2,7 +2,7 @@ import Link from "next/link";
 import { MobileNav } from "components/landing/mobile-nav";
 
 const navigation = [
-  { name: "SCIENCE", href: "/science" },
+  { name: "BPC-157 SCIENCE", href: "/science" },
   { name: "HOW IT WORKS", href: "/how-it-works" },
   { name: "ABOUT", href: "/about" },
   { name: "LEARN", href: "/learn" },

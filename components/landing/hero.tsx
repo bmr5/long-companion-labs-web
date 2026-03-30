@@ -15,32 +15,34 @@ export function Hero() {
                 <h1 className="font-serif text-5xl tracking-tight text-stone-900 sm:text-6xl lg:text-7xl">
                   Give Your Dog
                   <br />
-                  More Good
+                  More Good Years
                   <br />
-                  Years
+                  <span className="text-[#0D7377]">
+                    with Peptide Therapy
+                  </span>
                 </h1>
 
                 <p className="mt-6 text-lg text-stone-600">
-                  Veterinary-prescribed BPC-157 peptide therapy. Backed by
-                  research. Compounded by licensed pharmacies. Delivered to your
-                  door.
+                  BPC-157 peptide therapy prescribed by licensed veterinarians,
+                  compounded by US pharmacies, and delivered to your door.
+                  Backed by 25+ years of published research.
                 </p>
 
-                {/* Credibility badges with specific data */}
+                {/* Trust badges — scannable in under 1 second */}
                 <div className="mt-8 flex flex-wrap gap-3">
-                  <div className="rounded-lg border border-[#0D7377]/20 bg-[#0D7377]/5 px-4 py-2">
+                  <div className="rounded-lg border border-[#0D7377]/20 bg-[#0D7377]/5 px-4 py-2.5">
                     <p className="text-sm font-medium text-[#0D7377]">
-                      45–51% bioavailability in dogs (He et al. 2022)
+                      🔬 Research-Backed
                     </p>
                   </div>
-                  <div className="rounded-lg border border-[#0D7377]/20 bg-[#0D7377]/5 px-4 py-2">
+                  <div className="rounded-lg border border-[#0D7377]/20 bg-[#0D7377]/5 px-4 py-2.5">
                     <p className="text-sm font-medium text-[#0D7377]">
-                      Zero adverse events in safety studies
+                      👨‍⚕️ Vet-Prescribed
                     </p>
                   </div>
-                  <div className="rounded-lg border border-[#0D7377]/20 bg-[#0D7377]/5 px-4 py-2">
+                  <div className="rounded-lg border border-[#0D7377]/20 bg-[#0D7377]/5 px-4 py-2.5">
                     <p className="text-sm font-medium text-[#0D7377]">
-                      Vet-prescribed · Pharmacy-compounded · Delivered
+                      💊 Pharmacy-Compounded
                     </p>
                   </div>
                 </div>

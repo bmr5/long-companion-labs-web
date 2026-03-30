@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { FlaskConical, Stethoscope, Pill } from "lucide-react";
 import { Header } from "components/layout/header";
 import { LeadMagnetForm } from "./lead-magnet-form";
 
@@ -30,19 +31,22 @@ export function Hero() {
 
                 {/* Trust badges — scannable in under 1 second */}
                 <div className="mt-8 flex flex-wrap gap-3">
-                  <div className="rounded-lg border border-[#0D7377]/20 bg-[#0D7377]/5 px-4 py-2.5">
+                  <div className="flex items-center gap-2 rounded-lg border border-[#0D7377]/20 bg-[#0D7377]/5 px-4 py-2.5">
+                    <FlaskConical className="h-4 w-4 text-[#0D7377]" />
                     <p className="text-sm font-medium text-[#0D7377]">
-                      🔬 Research-Backed
+                      Research-Backed
                     </p>
                   </div>
-                  <div className="rounded-lg border border-[#0D7377]/20 bg-[#0D7377]/5 px-4 py-2.5">
+                  <div className="flex items-center gap-2 rounded-lg border border-[#0D7377]/20 bg-[#0D7377]/5 px-4 py-2.5">
+                    <Stethoscope className="h-4 w-4 text-[#0D7377]" />
                     <p className="text-sm font-medium text-[#0D7377]">
-                      👨‍⚕️ Vet-Prescribed
+                      Vet-Prescribed
                     </p>
                   </div>
-                  <div className="rounded-lg border border-[#0D7377]/20 bg-[#0D7377]/5 px-4 py-2.5">
+                  <div className="flex items-center gap-2 rounded-lg border border-[#0D7377]/20 bg-[#0D7377]/5 px-4 py-2.5">
+                    <Pill className="h-4 w-4 text-[#0D7377]" />
                     <p className="text-sm font-medium text-[#0D7377]">
-                      💊 Pharmacy-Compounded
+                      Pharmacy-Compounded
                     </p>
                   </div>
                 </div>

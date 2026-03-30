@@ -9,8 +9,8 @@ export function LeadMagnetCTA({ source }: { source: string }) {
             The Senior Dog Longevity Guide
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-lg text-stone-600">
-            What the research says about BPC-157, joint health, and helping
-            your dog thrive after age 7 — delivered free to your inbox.
+            Why veterinarians are turning to BPC-157 peptide therapy for
+            senior dogs — and what the research says it could do for yours.
           </p>
           <div className="mt-8 flex justify-center">
             <LeadMagnetForm source={source} variant="inline" />

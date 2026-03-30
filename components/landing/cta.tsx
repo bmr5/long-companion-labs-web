@@ -11,9 +11,9 @@ export function CTA() {
             Before You Decide?
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-lg text-stone-600">
-            Get the Senior Dog Longevity Guide — what the research actually
-            says about peptides, joint health, and helping your dog thrive
-            after age 7. Written by our veterinary team. No sales pitch.
+            Learn why veterinarians are prescribing BPC-157 for senior dogs —
+            the research, how it works, and what it could mean for your dog&apos;s
+            mobility and comfort. Written by our veterinary team.
           </p>
           <div className="mt-10 flex justify-center">
             <LeadMagnetForm source="cta" variant="inline" />

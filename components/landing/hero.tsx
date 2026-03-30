@@ -54,7 +54,7 @@ export function Hero() {
                 <div id="guide" className="mt-10 flex flex-col gap-4">
                   <LeadMagnetForm source="hero" />
                   <p className="text-sm text-stone-500">
-                    Free guide — what the research says about helping senior dogs thrive. No spam, ever.
+                    Free guide: How BPC-157 peptide therapy is changing senior dog care. No spam, ever.
                   </p>
                 </div>
               </div>

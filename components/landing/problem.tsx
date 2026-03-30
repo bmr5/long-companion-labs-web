@@ -1,17 +1,21 @@
+import Image from "next/image";
 import { AlertCircle, Pill, ShieldAlert } from "lucide-react";
 
 const symptoms = [
   {
     text: "Struggling to stand up after resting or naps",
     detail: "Stiffness that takes longer and longer to shake off",
+    image: "/images/symptoms/struggling.png",
   },
   {
     text: "Hesitating before stairs, jumps, or getting in the car",
     detail: "Activities they used to do without thinking twice",
+    image: "/images/symptoms/stairs.png",
   },
   {
     text: "Sleeping more and playing less",
     detail: "Low energy, low enthusiasm — not the dog you remember",
+    image: "/images/symptoms/sleeping.png",
   },
 ];
 
@@ -52,10 +56,21 @@ export function Problem() {
           {symptoms.map((s) => (
             <div
               key={s.text}
-              className="rounded-xl border border-stone-200 bg-white p-6"
+              className="overflow-hidden rounded-xl border border-stone-200 bg-white"
             >
-              <p className="font-medium text-stone-900">{s.text}</p>
-              <p className="mt-2 text-sm text-stone-500">{s.detail}</p>
+              <div className="relative h-48">
+                <Image
+                  src={s.image}
+                  alt={s.text}
+                  fill
+                  className="object-cover"
+                  sizes="(min-width: 640px) 33vw, 100vw"
+                />
+              </div>
+              <div className="p-5">
+                <p className="font-medium text-stone-900">{s.text}</p>
+                <p className="mt-2 text-sm text-stone-500">{s.detail}</p>
+              </div>
             </div>
           ))}
         </div>

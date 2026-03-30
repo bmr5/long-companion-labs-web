@@ -65,7 +65,7 @@ export function LeadMagnetForm({
             disabled={loading}
             className="rounded-lg bg-[#0D7377] px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-[#0A5C5F] disabled:opacity-50"
           >
-            {loading ? "Sending..." : "Get the Free Guide"}
+            {loading ? "Sending..." : "Send Me the Guide"}
           </button>
         </div>
       </form>
@@ -87,7 +87,7 @@ export function LeadMagnetForm({
           disabled={loading}
           className="rounded-full bg-[#0D7377] px-6 py-3 text-sm font-medium uppercase tracking-wider text-white transition-colors hover:bg-[#0A5C5F] disabled:opacity-50"
         >
-          {loading ? "Sending..." : "Download Free Guide"}
+          {loading ? "Sending..." : "Send Me the Guide"}
         </button>
       </form>
     );
@@ -107,7 +107,7 @@ export function LeadMagnetForm({
         disabled={loading}
         className="rounded-full bg-[#0D7377] px-6 py-3 text-sm font-medium uppercase tracking-wider text-white transition-colors hover:bg-[#0A5C5F] disabled:opacity-50"
       >
-        {loading ? "Sending..." : "Get the Free Guide"}
+        {loading ? "Sending..." : "Send Me the Guide"}
       </button>
     </form>
   );

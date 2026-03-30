@@ -14,19 +14,19 @@ export function Hero() {
             <div className="px-6 py-20 lg:px-8 lg:py-32">
               <div className="mx-auto max-w-xl lg:mx-0">
                 <h1 className="font-serif text-5xl tracking-tight text-stone-900 sm:text-6xl lg:text-7xl">
-                  Give Your Dog
+                  They Gave You
                   <br />
-                  More Good Years
+                  Their Best Years.
                   <br />
                   <span className="text-[#0D7377]">
-                    with Peptide Therapy
+                    Give Them More.
                   </span>
                 </h1>
 
                 <p className="mt-6 text-lg text-stone-600">
-                  BPC-157 peptide therapy prescribed by licensed veterinarians,
-                  compounded by US pharmacies, and delivered to your door.
-                  Backed by 25+ years of published research.
+                  A vet-prescribed peptide treatment that supports your dog's
+                  joints, mobility, and recovery from the inside out —
+                  backed by 25 years of published research.
                 </p>
 
                 {/* Trust badges — scannable in under 1 second */}
@@ -54,7 +54,7 @@ export function Hero() {
                 <div id="guide" className="mt-10 flex flex-col gap-4">
                   <LeadMagnetForm source="hero" />
                   <p className="text-sm text-stone-500">
-                    Get the free Senior Dog Longevity Guide. No spam, ever.
+                    Free guide — what the research says about helping senior dogs thrive. No spam, ever.
                   </p>
                 </div>
               </div>

@@ -7,14 +7,14 @@ const stats = [
     value: 100,
     suffix: "+",
     label: "Published Studies on BPC-157",
-    sublabel: "Across species, in peer-reviewed journals",
+    sublabel: "Over 25 years of peer-reviewed research",
     decimals: 0,
   },
   {
     value: 0,
     suffix: "",
-    label: "Adverse Events in Safety Studies",
-    sublabel: "Xu et al. 2020 — tested in mice, rats, rabbits, and dogs",
+    label: "Side Effects Reported in Safety Studies",
+    sublabel: "Tested across multiple species including dogs",
     decimals: 0,
     isZero: true,
   },
@@ -26,12 +26,11 @@ const stats = [
     decimals: 0,
   },
   {
-    value: 1,
-    suffix: "",
-    label: "USA Compounding Pharmacies",
+    value: 25,
+    suffix: "+",
+    label: "Years of Research",
+    sublabel: "BPC-157 studied since the late 1990s",
     decimals: 0,
-    hideValue: true,
-    sublabel: "Licensed 503A pharmacy compounding",
   },
 ];
 
@@ -48,11 +47,7 @@ export function Stats() {
           <dl className="grid grid-cols-2 gap-8 text-center md:grid-cols-4">
             {stats.map((stat) => (
               <div key={stat.label} className="flex flex-col gap-2">
-                {stat.hideValue ? (
-                  <dt className="font-serif text-2xl tracking-tight text-stone-900 sm:text-3xl">
-                    <span className="text-[#0D7377]">🇺🇸</span>
-                  </dt>
-                ) : stat.isZero ? (
+                {stat.isZero ? (
                   <dt className="font-serif text-4xl tracking-tight text-stone-900 sm:text-5xl">
                     <span className="text-stone-900">0</span>
                   </dt>

@@ -49,12 +49,14 @@ export function Comparison() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="mb-12 text-center">
           <h2 className="font-serif text-4xl tracking-tight text-stone-900 sm:text-5xl">
-            A Better Approach to Senior Dog Care
+            You&apos;ve Tried the Usual Options.
+            <br />
+            Here&apos;s What&apos;s Different.
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-stone-600">
-            Each option has a role. We believe peptide therapy fills a gap that
-            existing approaches leave open — targeted tissue repair under
-            veterinary supervision.
+            Every option below has a role in your dog&apos;s care. Peptide
+            therapy fills a gap the others leave open — targeted tissue
+            repair, under veterinary supervision.
           </p>
         </div>
 

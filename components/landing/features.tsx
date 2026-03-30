@@ -3,27 +3,27 @@ import { Video, Stethoscope, Pill, Truck, ArrowRight } from "lucide-react";
 
 const features = [
   {
-    name: "Vet Telehealth Consult",
+    name: "Talk to a Vet From Home",
     description:
-      "Connect with a licensed veterinarian from home — no clinic visit needed.",
+      "A quick video call with a licensed veterinarian who understands senior dog care. No stressful clinic visit.",
     icon: Video,
   },
   {
-    name: "Custom Prescription",
+    name: "Get a Plan Made for Your Dog",
     description:
-      "Your vet prescribes a peptide protocol tailored to your dog's specific needs.",
+      "Your vet evaluates your dog's specific needs and prescribes a personalized peptide treatment.",
     icon: Stethoscope,
   },
   {
-    name: "Pharmacy-Compounded Medication",
+    name: "Medication From a Licensed Pharmacy",
     description:
-      "Clinical-grade peptides from a licensed 503A compounding pharmacy.",
+      "Your dog's prescription is prepared by a licensed US compounding pharmacy — not a supplement factory.",
     icon: Pill,
   },
   {
     name: "Delivered to Your Door",
     description:
-      "Temperature-controlled shipping with dosing instructions included.",
+      "Ships directly to you with clear dosing instructions. No pickups, no hassle.",
     icon: Truck,
   },
 ];

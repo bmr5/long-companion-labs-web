@@ -36,7 +36,7 @@ export function Problem() {
           dog&apos;s body needs support its current routine isn&apos;t
           providing.{" "}
           <span className="font-medium text-stone-900">
-            Long Companion Labs was built for exactly this.
+            There&apos;s a better option — and your dog doesn&apos;t have to just live with it.
           </span>
         </p>
       </div>

@@ -42,7 +42,7 @@ export function Header() {
               href="#guide"
               className="rounded-full bg-[#0D7377] px-5 py-2 text-xs font-medium uppercase tracking-wider text-white transition-colors hover:bg-[#0A5C5F]"
             >
-              Get the Free Guide
+              Free Longevity Guide
             </Link>
           </div>
         </nav>
